@@ -1,1 +1,15 @@
 /* you can add any styles you think could improve user's experience */
+
+.cardStyle {
+    width: 233px;
+}
+
+.showProductsContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.cartProductsContent {
+    display: flex;
+    flex-direction: row;
+}

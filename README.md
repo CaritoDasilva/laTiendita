@@ -5,11 +5,20 @@
 - [Descripción del test](#descripción-del-test)
 - [Reglas](#reglas-de-entrega)
 
-## Requerimientos mínimos
+## Resolución del Reto Técnico
 
-- [Node 6.9.1][nodejs]
+- Se utilizo React para la resolución. Se hizo una consulta al catálogo con el método componentWillMount() para que sea lo primero que se ejecute al abrir la aplicación. Este método realiza una llmada asíncrona para traerse los productos y así estos puedan ser cargados en el componente de Product.
+- Se utilizaron diferentes componentes para poder tener organizada la estructura de datos de manera eficiente y se utiliza el método de PROPS para poder pasar la información entre componentes.
+- Para poder agregar y remover productos se utilizan los estados los cuales van a cambiar cada vez que haya alguna modificación, siendo éstas desencadenadas por los eventos onClick de los botones ADD y REMOVE.
+- Los componentes ShowProducts y CardProducts se encargan de hacer un map del catálogo el cuál va a traer un arreglo nuevo con cada uno de los items, para que el componente de Product y ProductPlus puedan pintar las diferentes tarjetas en la pantalla.
 
 ## Correr aplicación
+
+- Actaulizar el package.json para que pueda tomar los estilos de materialize.
+
+```shell
+$ npm install
+```
 
 - Correr Express
 
@@ -32,33 +41,9 @@ Se requiere implementar un carrito de compras simple, éste debe contar con dos 
 
 Las reglas del negocio son:
 
-- Cada ítem del catálogo debe tener un action button con texto `Add item to cart`
-- Cada ítem en el carro debe tener un action button con texto `Remove item from cart`
+- Cada ítem del catálogo tiene un action button con texto `Add Cart`
+- Cada ítem en el carro tiene un action button con texto `Remove`
 
 # DEMO
 
-![](ecomsur-test.gif)
-
-### Puntos extras
-
-- Uso de Redux para el manejo de estados.
-- Uso de `map`, `filter`, `reduce`, `forEach`.
-- Uso de componentes funcionales en tu aplicación
-
-
-# Reglas de entrega
-
-1. Documenta la resolución de tu problema en el archivo README.md, además,
-indica detalladamente cómo instalar las dependencias o archivos necesarios para correr
-tu aplicación.
-
-2. Tu aplicación debe funcionar correctamente.
-
-3. Si no puedes utilizar React, puedes resolver este test con Vanilla Javascript.
-
-4. Por favor, no subas tu desarrollo a Github para hacer que el proceso de selección
-sea más justo para todos. Envíanos tu proyecto en formato .zip al correo
-`lliempi@ecomsur.com`
-
-
-¡Mucho éxito! :muscle:
+-Se envía un DEMO adjunto en el correo del envío del desafío técnico.

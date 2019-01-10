@@ -1,6 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import IndexApp from "./IndexApp";
 
-const App = ({ message }) => <div>{ message }</div>;
-
-ReactDOM.render(<App message="hello world" />, document.getElementById('app'));
+ReactDOM.render(<IndexApp />, document.getElementById("app"));
